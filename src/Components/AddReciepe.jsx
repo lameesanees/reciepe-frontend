@@ -41,7 +41,7 @@ function AddReciepe() {
   return (
     <>
     <h2 className="text-center mb-4 m-2">Add Recipe</h2>
-    <div className="container bg-dark text-black mt-4 mb-4 p-5">
+    <div className="container bg-dark text-black mt-4 mb-4">
       
       <form onSubmit={handleSubmit} style={{ backgroundColor: '#f5f5f5', padding: '20px', borderRadius: '8px' }}>
         <div className="mb-4">
