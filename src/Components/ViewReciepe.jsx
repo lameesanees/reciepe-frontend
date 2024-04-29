@@ -3,14 +3,13 @@ import React, { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import Restop from "./Restop";
-import RestReview from "./RestReview";
 
 function ViewReciepe() {
   const [details, setdetails] = useState({});
 
   const { id } = useParams();
   console.log(id);
-  const base_url = "http://localhost:8001/recipes";
+  const base_url = "http://localhost:8002/recipes";
 
   const fetchRest = async () => {
     const result = await axios.get(`${base_url}/${id}`);

@@ -9,7 +9,7 @@ function Restop() {
   const [show, setShow] = useState(false);
   const { id } = useParams();
   console.log(id);
-  const base_url = "http://localhost:8001/recipes";
+  const base_url = "http://localhost:8002/recipes";
 
   const [addIngredients, setIngredients] = useState({});
   const handleClose = () => setShow(false);

@@ -1,6 +1,6 @@
 import "./App.css";
 import {Routes,Route} from 'react-router-dom'
-import AddReciepe from "./Components/AddReciepe";
+// import AddReciepe from "./Components/AddReciepe";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/view/:id" element={<ViewReciepe />} />
-        <Route path="/add" element={<AddReciepe />} />
+        {/* <Route path="/add" element={<AddReciepe />} /> */}
       </Routes>
       <Footer />
     </>
